@@ -1,0 +1,12 @@
+<p>
+  sum-test works!
+</p>
+<div>
+  <input class="input" [(ngModel)]="first" (change)="onchange()"> +
+  <input class="input" [(ngModel)]="second" (change)="onchange()"> =
+  <input class="input" [value]="sum">
+  <br><br>
+
+  <div id="showColor" [style.background-color]="sum<0 ?'blue':'red'">{{sum}}</div>
+
+</div>

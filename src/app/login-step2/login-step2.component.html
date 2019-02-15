@@ -1,0 +1,12 @@
+<p>
+  login-step2 works!
+</p>
+<h2>Enter Password</h2>
+<div>
+  <label>
+    Password for {{username}}:
+    <input type="password" [formControl]="password">
+  </label>
+</div>
+<button (click)="login()">Login</button>
+<h2 *ngIf="isLogin">Hello User: {{username}}, Password: {{password.value}}</h2>
